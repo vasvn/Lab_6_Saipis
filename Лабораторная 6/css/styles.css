@@ -1,0 +1,76 @@
+body{
+	background: rgba(87, 34, 34);
+}
+#main{
+	background: url("../resource/1.jpg");
+	height: 100%;
+	width: 100%;
+	color: whitesmoke;
+	font-weight: bold;
+}
+
+textarea{
+    resize: none;
+}
+
+::placeholder{
+	color: rgba(34, 23, 23, 0.87);
+	font-weight: bold;
+}
+
+div{
+	text-align: center;
+	width: 60%;
+	margin: auto;
+	padding-top: 10px;
+}
+
+input, button{
+	text-align: center;
+	color:  rgba(128, 46, 46, 0.87);
+	font-weight: bold;
+	background-color: rgba(192, 192, 192, 0.65);
+	border-bottom: 2px solid rgba(155, 153, 149, 0.582);
+	border-radius: 15px;
+	padding: 8px;
+	margin: 15px;
+}
+
+select{
+	width: 100%;
+	margin: 0 25px;
+}
+
+button{
+	width: 46%;
+	height: 50px;
+}
+
+input{
+	display: block;
+	width: 500px;
+	margin-left: 270px;
+}
+
+#add-prop{
+	width: 100%;
+}
+
+textarea{
+	background: rgba(78, 95, 97, 0.34);
+	color: black;
+	width: 700px;
+	height: 82px;
+	display: block;
+	margin: 20px 0;
+	margin-left: 170px;
+}
+
+td{
+	border: 1px dashed rgba(34, 31, 28, 0.877);
+}
+
+table{
+	width: 50%;
+	margin: auto;
+}

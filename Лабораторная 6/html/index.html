@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="../css/styles.css">
+		<title>Автостоянка</title>
+		<script src="../js/template/cars.js"></script>
+	    <script src="../js/functions.js"></script>
+		<script src="../js/database.js"></script>
+	</head>
+	<body>
+		<div id="main">
+		<div>
+			<input type="text" name="name" placeholder="Название авто" required>
+			<input type="text" name="fio" required placeholder="ФИО владельца">
+			<input type="text" name="number" required placeholder="Номер авто">
+			<input type="time" name="time" required placeholder="Время стоянки">
+			<textarea rows="5" cols="40" placeholder="Адрес владельца"></textarea>
+			<select>
+			</select>				
+			<button type="button" onclick="add()">Добавить запись</button>
+			<button type="reset">Сбросить</button>
+			<button type="button" onclick="remove()">Удалить запись</button>
+			<button type="button" onclick="show(this)">Показать все записи</button>
+		</div>
+		<div>
+			<button type="button" onclick="minmax()">Показать авто с максимальным и минимальным временем стоянки</button>
+			
+			<button type="button" id="add-prop" onclick="addProp()">Добавить свойство</button>
+		</div>
+		<div id="min-time"></div>
+		<div id="max-time"></div>
+		<div id = "table" style="display:none; width: 50%; margin: auto">
+			<table>
+				<tr>
+					<th>Номер</th>
+					<th>Название авто</th>
+					<th>ФИО владельца</th>
+					<th>Номер авто</th>
+					<th>Время регистрации</th>
+					<th>Дополнительные данные</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+	</body>
+</html>
