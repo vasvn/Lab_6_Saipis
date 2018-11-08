@@ -1,25 +1,27 @@
 function minmax(){
-	var div1 = document.getElementById("min-time");
-	var div2 = document.getElementById("max-time");
-	if(div1.innerHTML !== ""){
-		div1.innerHTML = "";
+	var maxtime = document.getElementById("max-time");
+	var mintime = document.getElementById("min-time");
+	if(mintime.innerHTML !== ""){
+		mintime.innerHTML = "";
 		return;
 	}
 	if(window.data.size === 0){
-		div1.innerHTML = "В базе данных еще нет записей";
-	}else{
+		mintime.innerHTML = "В базе данных еще нет записей";
+	} else{
 		var min = null;
 		var max = null;
 		for(let car of window.data){
-			if(min === null || min.getId() > car.getId()){
+			if(min === null || min.getTimes() > car.getTimes()){
 				min = car;
 			}
-			if(max === nul || max.getId() < car.getId()){
+		}
+		for(let car of window.data){
+			if(max === null || max.getTimes() < car.getTimes()){
 				max = car;
 			}
 		}
-		div1.innerHTML = min.toString();
-		div2.innerHTML = max.toString();
+		maxtime.innerHTML = "Авто с максимальным временем стоянки:" + "<br>" + max.toString();
+		mintime.innerHTML = "Авто с минимальным временем стоянки:" + "<br>" + min.toString() + "<br>";
 	}
 }
 
